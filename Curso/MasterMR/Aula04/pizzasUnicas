@@ -1,0 +1,46 @@
+
+nomes = ['Bruno Gonçalves', 'Bruno Schambeck', 'Eric', 'Felipe Araujo', 'Felipe Figueira', 'Gabriel', 'Jorge', 'Marcos', 'Mauricio', 'Paola', 'Paulo', 'Luiz Gustavo']
+
+pizzas = ['Peperoni', 'Filé', 'Frango com Catupiry', 'Queijo', 'Calabresa', 'Baiana', 'Portuguesa', 'Marguerita', 'Portuguesa', 'Marguerita', 'Chocolate', 'Marguerita']
+
+
+pizzasUnicas = []
+for pizza in pizzas:
+    if pizza.lower() not in pizzasUnicas: pizzasUnicas.append(pizza.lower())
+
+
+pizzasFavoritas = list(zip(nomes, pizzas))    #zip "junta" - Cria tuplas com cada item das listas (Matriz)
+
+pizzasFavoritas.sort() #Ordena sempre pelo primeiro (nomes)
+
+pizzasFavoritasPorPizza = list(zip(pizzas, nomes))
+
+pizzasFavoritasPorPizza.sort()
+
+
+pizzasUnicas = []
+
+
+for pizza in pizzas:
+    if pizza not in pizzasUnicas: pizzasUnicas.append(pizza)
+
+pizzasUnicas.sort
+
+resumo = []
+for pizzaUnica in pizzasUnicas:
+    nomesPorPizza = [] #recriando a variável, não pode usar .Clear pois objetos estão vinculados
+    for pizza, nome in pizzasFavoritasPorPizza:
+        if pizzaUnica == pizza: 
+            nomesPorPizza.append(nome)
+        else:
+            if len(nomesPorPizza): break #Exit for/Exit Do (saída antecipada do loop) #bool(0) - Falso / qq outro número verdadeiro
+
+    resumo.append((pizzaUnica, tuple(nomesPorPizza)))
+
+#nome, pizzas = pizzasFavoritas
+#nomes, pizzas = [[([].append(nome), [].append(pizza)) for nome, pizza in pizzasFavoritas]]
+
+
+
+
+print('Fim')

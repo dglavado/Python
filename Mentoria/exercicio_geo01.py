@@ -1,3 +1,6 @@
+#Exercício 01 - Gerar 5 funções que calculem o perímetro e a área de um triângulo e de um quadrilátero, além de uma função que verifique se o quadrilátero é um quadrado ou não.
+#Código gerado por IA (praticamente todo).
+
 def perTriangulo(lado1, lado2, lado3):
     return lado1 + lado2 + lado3
 
